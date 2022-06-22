@@ -6,7 +6,6 @@ export interface ButtonProps {
 }
 
 const Button = (props: ButtonProps) => {
-  console.log(style);
   return <button className={style.button}>{props.label}</button>;
 };
 
