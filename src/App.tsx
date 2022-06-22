@@ -1,10 +1,8 @@
 import React from 'react';
-import { Button } from './components';
+import Button from './components/Button/Button';
 
-const App = () => {
-  return(
-    <Button label='DR DRI'/>
-  )
+function App () {
+  return <Button label="DR DRI" />;
 }
 
 export default App;
