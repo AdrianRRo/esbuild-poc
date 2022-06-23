@@ -48,6 +48,7 @@
         "react/prop-types": 0,
         "react/display-name": 0,
         "space-before-blocks": "error",
-        "space-before-function-paren": "error"
+        "space-before-function-paren": "error",
+        "@typescript-eslint/no-var-requires": 0
     }
 }

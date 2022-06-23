@@ -1,10 +1,10 @@
-const esbuild = require("esbuild");
-const { getBuildConfig } = require("./build-config");
+const esbuild = require('esbuild');
+const { getBuildConfig } = require('./build-config');
 
 esbuild
   .serve(
     {
-      servedir: "public",
+      servedir: 'public',
       port: 8000,
     },
     getBuildConfig(true)

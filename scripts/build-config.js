@@ -1,6 +1,6 @@
-const {sassPlugin, postcssModules} = require('esbuild-sass-plugin')
+const {sassPlugin, postcssModules} = require('esbuild-sass-plugin');
 const getBuildConfig = (isServe) => ({
-  entryPoints: ['src/index.ts'],
+  entryPoints: ['src/index.tsx'],
   bundle: true,
   format: 'esm',
   outfile: `${isServe ? 'public' : 'dist'}/esm/index.js`,
@@ -8,7 +8,7 @@ const getBuildConfig = (isServe) => ({
   sourcemap: true,
   plugins: [
     sassPlugin({
-      type: "styles",
+      type: 'styles',
       transform: postcssModules({})
     })
   ]
@@ -16,4 +16,4 @@ const getBuildConfig = (isServe) => ({
 
 module.exports = {
   getBuildConfig
-}
+};
