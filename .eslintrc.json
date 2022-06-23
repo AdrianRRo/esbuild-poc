@@ -1,0 +1,54 @@
+{
+    "env": {
+        "browser": true,
+        "es2021": true,
+        "jest": true
+    },
+    "extends": [
+        "plugin:react/recommended",
+        "plugin:@typescript-eslint/recommended",
+        "eslint:recommended"
+    ],
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": "latest",
+        "sourceType": "module"
+    },
+    "plugins": [
+        "react",
+        "@typescript-eslint"
+    ],
+    "rules": {
+        "react/jsx-filename-extension": [2, { "extensions": [".jsx", ".tsx"] }],
+        "import/extensions": [0, "never"],
+        //Custom Jack rules
+        "indent": [
+            "error",
+            2,
+            { "SwitchCase": 1 }
+        ],
+        "linebreak-style": [
+            "error",
+            "unix"
+        ],
+        "keyword-spacing": "error",
+        "quotes": [
+            "error",
+            "single"
+        ],
+        "semi": [
+            "error",
+            "always"
+        ],
+        "no-undef": 0,
+        "no-unused-vars": 1,
+        "react/prop-types": 0,
+        "react/display-name": 0,
+        "space-before-blocks": "error",
+        "space-before-function-paren": "error",
+        "@typescript-eslint/no-var-requires": 0
+    }
+}
