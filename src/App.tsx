@@ -1,8 +1,8 @@
 import React from 'react';
-import Button from './components/Button/Button';
+import '@no-gravity-elements/info-box';
 
 function App () {
-  return <Button label="DR DRI" />;
+  return <nge-info-box label='testlabel' />;
 }
 
 export default App;

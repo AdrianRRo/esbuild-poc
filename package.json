@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/AdrianRRo/esbuild-poc#readme",
   "dependencies": {
+    "@no-gravity-elements/info-box": "^1.0.1-alpha-0.4",
     "@types/react": "^18.0.14",
     "@types/react-dom": "^18.0.5",
     "esbuild": "^0.14.45",
